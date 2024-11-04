@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 import {
   BrowserRouter as Router,
   Route,
@@ -32,6 +33,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<ProductList addToCart={addToCart} />} />
+
         <Route path="/cart" element={<Cart cart={cart} />} />
         <Route
           path="/checkout"
